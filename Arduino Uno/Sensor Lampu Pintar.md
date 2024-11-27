@@ -121,3 +121,6 @@ void loop() {
   ____(500);  // Delay sebentar sebelum membaca ulang, bagian ini perlu diisi
 }
 ```
+## Jawaban
+
+- [Sistem Lampu Pintar Wokwi Simulation]()
