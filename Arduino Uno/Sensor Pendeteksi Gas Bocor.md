@@ -75,20 +75,20 @@ Sistem ini akan melakukan pemantauan dua parameter: suhu dan kualitas udara. Kua
 ## Kode yang Diberikan
 
 ```cpp
-#include <___> // Nama library LCD I2C
-#include <___> //nama library sensor dht
+#include <___> // Nama library LCD I2C, bagian ini perlu diisi
+#include <___> //nama library sensor dht, bagian ini perlu diisi
 
-#define Kualitas_Udara ___  // Input kan value batas kualitas udara
-#define Batas_Suhu ___     // Input kan value batas suhu
+#define Kualitas_Udara ___  // Input kan value batas kualitas udara, bagian ini perlu diisi
+#define Batas_Suhu ___     // Input kan value batas suhu, bagian ini perlu diisi
 
-#define DHTPIN __          // Input kan value pin data untuk sensor DHT22
-#define DHTTYPE DHT22     // Tipe sensor DHT
-#define LED_Hijau __      // Input kan value pin untuk LED indikator IoT ON
-#define BUZZER_PIN __     // Input kan value pin untuk Buzzer
-#define POT_PIN __        // Input kan value pin untuk Potentiometer yang digunakan untuk mensimulasikan MQ135
+#define DHTPIN __          // Input kan value pin data untuk sensor DHT22, bagian ini perlu diisi
+#define DHTTYPE DHT22     // Tipe sensor DHT, bagian ini perlu diisi
+#define LED_Hijau __      // Input kan value pin untuk LED indikator IoT ON, bagian ini perlu diisi
+#define BUZZER_PIN __     // Input kan value pin untuk Buzzer, bagian ini perlu diisi
+#define POT_PIN __        // Input kan value pin untuk Potentiometer yang digunakan untuk mensimulasikan MQ135, bagian ini perlu diisi
 
 DHT dht(DHTPIN, DHTTYPE);
-LiquidCrystal_I2C lcd(0x27, __, __); // Input kan ukuran LCD I2C yg digunakan
+LiquidCrystal_I2C lcd(0x27, __, __); // Input kan ukuran LCD I2C yg digunakan, bagian ini perlu diisi
 
 void setup() {
   Serial.begin(9600);  // Mulai komunikasi serial
@@ -96,7 +96,7 @@ void setup() {
   lcd.init();          // Inisialisasi LCD
   lcd.backlight();     // Aktifkan lampu latar LCD
 
-  pinMode(LED_Hijau, _____);   // Set pin LED sebagai output
+  pinMode(LED_Hijau, _____);   // Set pin LED sebagai output, bagian ini perlu diisi
   pinMode(BUZZER_PIN, OUTPUT);  // Set pin buzzer sebagai output
 
   // LED indikator menyala untuk menunjukkan perangkat aktif
@@ -105,7 +105,7 @@ void setup() {
   lcd.print("Perangkat Aktif");
   lcd.setCursor(0, 1);
   lcd.print("Sistem Gas Bocor");
-  delay(____);  // Tampilkan pesan selama 3 detik
+  delay(____);  // Tampilkan pesan selama 3 detik, bagian ini perlu diisi
   lcd.clear();
 }
 
@@ -140,10 +140,10 @@ void loop() {
     tone(BUZZER_PIN, 1000);  // Bunyikan buzzer pada frekuensi 1000 Hz
   } else if (gasBuruk) {
     lcd.print("Gas Buruk          ");
-    ___(BUZZER_PIN);      // Matikan buzzer
+    ___(BUZZER_PIN);      // Matikan buzzer, bagian ini perlu diisi
   } else if (suhuTinggi) {
     lcd.print("Suhu Tinggi        ");
-    noTone(___);      // Matikan buzzer
+    noTone(___);      // Matikan buzzer, bagian ini perlu diisi
   } else {
     lcd.print("Kondisi Aman       ");
     noTone(BUZZER_PIN);      // Matikan buzzer
@@ -152,7 +152,7 @@ void loop() {
   lcd.setCursor(0, 3);
   lcd.print("Monitoring aktif   ");
 
-  ____(1000); // Update setiap 1 detik
+  ____(1000); // Update setiap 1 detik, bagian ini perlu diisi
 }
 ```
 
