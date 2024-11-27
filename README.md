@@ -100,7 +100,7 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 Jika Anda memiliki pertanyaan atau saran, Anda dapat menghubungi saya melalui email di: **alizahra2403@gmail.com**.
 
-Anda juga dapat mengunjungi profil LinkedIn saya di: [LinkedIn - Aliza Nurfitrian Meizahra](https://www.linkedin.com/in/alizanm/)
+Anda juga dapat mengunjungi profil LinkedIn saya di: [LinkedIn - Aliza Nurfitrian Meizahra](https://www.linkedin.com/in/alizaaaja/)
 
 
 ---
