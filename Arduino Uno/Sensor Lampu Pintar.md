@@ -10,6 +10,7 @@ Tugas ini bertujuan untuk membuat sistem lampu otomatis yang dapat mendeteksi pe
 - **LED Ruang Tamu**: Menyala saat ada pergerakan di ruang tamu.
 - **LED Ruang Belajar**: Menyala saat intensitas cahaya di ruang belajar rendah (gelap).
 - **Arduino Uno**: Sebagai mikrokontroler utama.
+- **LCD 20x4 I2C**: Untuk menampilkan status lampu ON atau OFF.
 
 ## Library yang Digunakan
 
@@ -33,7 +34,7 @@ Tugas ini bertujuan untuk membuat sistem lampu otomatis yang dapat mendeteksi pe
    
    > **Catatan**: Pasang resistor **220 ohm** antara pin anoda LED dan pin Arduino untuk membatasi arus yang mengalir.
 
-### 4. **Merangkai LCD 16x2 I2C**:
+### 4. **Merangkai LCD 20x4 I2C**:
    - Sambungkan pin VCC ke **VCC** Arduino.
    - Sambungkan pin GND ke **GND** Arduino.
    - Sambungkan pin SDA ke **Pin A4** Arduino.
