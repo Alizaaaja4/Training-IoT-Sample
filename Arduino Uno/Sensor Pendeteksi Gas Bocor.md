@@ -6,7 +6,7 @@ Tugas ini bertujuan untuk membuat sistem pendeteksi gas bocor yang menggabungkan
 ## Komponen yang Digunakan
 
 - **Sensor DHT22**: Untuk membaca suhu dan kelembapan.
-- **LCD 16x2 I2C**: Untuk menampilkan hasil pengukuran suhu, kelembapan, dan status kualitas udara.
+- **LCD 20x4 I2C**: Untuk menampilkan hasil pengukuran suhu, kelembapan, dan status kualitas udara.
 - **LED Hijau**: Sebagai indikator bahwa perangkat aktif.
 - **Buzzer**: Untuk memberikan peringatan jika kondisi udara atau suhu berbahaya.
 - **Potensiometer**: Digunakan untuk mensimulasikan kualitas udara (contoh: sensor MQ135).
@@ -26,7 +26,7 @@ Tugas ini bertujuan untuk membuat sistem pendeteksi gas bocor yang menggabungkan
 
    > **Catatan**: Jika ingin meningkatkan kestabilan pembacaan, pasang resistor **4.7 kΩ** atau **10 kΩ** antara pin DATA dan pin VCC.
 
-### 2. **Merangkai LCD 16x2 I2C**:
+### 2. **Merangkai LCD 20x4 I2C**:
    - Sambungkan pin VCC ke **VCC** Arduino.
    - Sambungkan pin GND ke **GND** Arduino.
    - Sambungkan pin SDA ke **Pin A4** Arduino.
